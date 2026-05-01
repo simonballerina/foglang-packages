@@ -10,15 +10,16 @@ boul is_prime(num) {
 
 }
 
-main;
-
-band stop = 1000;
-band i = 2; 
-
-naer i < stop {
-	band res = is_prime(i);
-	givet att res = 1 {
-		foug i;
+boul print_primes(limit) {
+	band i = 2; 
+	
+	naer i < limit {
+		band res = is_prime(i);
+		givet att res = 1 {
+			foug i;
+		}
+		band i = i+1;
 	}
-	band i = i+1;
 }
+
+
