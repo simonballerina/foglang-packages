@@ -1,1 +1,23 @@
+boul is_prime(num) {
+	band i = 2;
+	naer i < num {
+		givet att num % i = 0 {
+			return 0;
+		}
+		band i = i+1;
+	}
+	return 1;
 
+}
+
+boul print_primes(limit) {
+	band i = 2; 
+	
+	naer i < limit {
+		band res = is_prime(i);
+		givet att res = 1 {
+			foug i;
+		}
+		band i = i+1;
+	}
+}
