@@ -1,14 +1,4 @@
-boul is_prime(num) {
-	band i = 2;
-	naer i < num {
-		givet att num % i = 0 {
-			return 0;
-		}
-		band i = i+1;
-	}
-	return 1;
-
-}
+bult sax funcs/is_prime.fg;
 
 boul print_primes(limit) {
 	band i = 2; 
